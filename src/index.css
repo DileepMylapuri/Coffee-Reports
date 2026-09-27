@@ -1,0 +1,61 @@
+:root {
+  --brand: #4fb0f5;
+  --brand-strong: #3fa2ec;
+  --on-brand: #fff;
+  --surface: #fff;
+  --nav-bg: #f1f1f1;
+  --text: #111;
+  --muted: #555;
+  --thead-bg: #e6f3fc;
+  --grid: #cfe5f6;
+  --row-hover: #efefef;
+  --up: #0a8a0a;
+  --down: #e30000;
+  --tabs-bg: #ececec;
+  --tabs-border: #d2d2d2;
+  --font: 'Roboto', system-ui, 'Segoe UI', sans-serif;
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --brand: #2f86c8;
+  --brand-strong: #2a78b4;
+  --surface: #12151b;
+  --nav-bg: #1b1f27;
+  --text: #e8eaed;
+  --muted: #a0a6b0;
+  --thead-bg: #1c2a38;
+  --grid: #2a3b4d;
+  --row-hover: #1c232d;
+  --up: #3fd162;
+  --down: #ff6161;
+  --tabs-bg: #1b1f27;
+  --tabs-border: #333b47;
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--surface);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+select {
+  font: inherit;
+  color: inherit;
+}
